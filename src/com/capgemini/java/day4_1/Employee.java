@@ -1,7 +1,7 @@
 package com.capgemini.java.day4_1;
 
 public class Employee {
-	private long employeeId;
+	private String employeeId;
 	private String employeeName;
 	private String employeeAddress;
 	private int employeePhone;
@@ -13,7 +13,7 @@ public Employee() {
 	super();
 	
 }
-public Employee(long employeeId,String employeeName, String accType, String employeeAddress, int employeePhone) {
+public Employee(String employeeId,String employeeName, String accType, String employeeAddress, int employeePhone) {
 	this();
 	this.employeeId= employeeId;
 	this.employeeName= employeeName;
@@ -25,7 +25,7 @@ public double calculateSalary(double salary) {
 	System.out.println("Basic Salary:"+basicSalary);
 	return salary;
 }
-public long getEmployeeId() {
+public String getEmployeeId() {
 	return employeeId;
 }
 public void setEmployeeId() {
